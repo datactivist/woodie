@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>The Good, the Bad, the Ugly of French essential contracting data</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samuel Goëta, Datactivist" />
+    <meta name="date" content="2021-04-14" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# The Good, the Bad, the Ugly of French essential contracting data
+### Samuel Goëta, Datactivist
+### 2021-04-14
+
+---
+
+
+layout: true
+
+&lt;style&gt;
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+&lt;/style&gt;
+
+
+&lt;div class='my-footer'&gt;&lt;span&gt;woodie&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+class: center, middle
+
+Ces slides en ligne : http://datactivist.coop/woodie
+
+Sources : https://github.com/datactivist/woodie
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+
+---
+
+class: inverse, center, middle
+
+
+### Essential contracting data: DECP ?
+
+---
+### Essential contracting data
+.pull-left[
+- .red[**Ordinance of July 23, 2015**]: requires "public buyers to make public the choice of the selected offer and to make available in an open and freely reusable format the essential data of the public contract."
+
+- The [**Order of April 14, 2017**](https://www.legifrance.gouv.fr/eli/arrete/2017/4/14/ECFM1637256A/jo) specifies the list of data that must be published on buyer profiles as well as the terms of their publication as of October 1, 2018]
+
+.pull-right[
+![](img/quand.png)
+.footnote[[Source](https://www.etalab.gouv.fr/la-transparence-de-la-commande-publique-se-transforme-au-service-de-lopen-data)]
+]
+
+---
+### What is the content of the data?
+![](img/quelles.png)
+
+---
+### An interoperable and unique standard 
+.reduite2[[![](img/referentiel.png)](https://www.legifrance.gouv.fr/eli/arrete/2017/4/14/ECFM1637256A/jo)]
+---
+### Data should be published as soon as possible 
+.center.reduite[![](img/calendrier.png)]
+---
+## When and how?
+
+![](img/ou.png)
+
+---
+### The Good
+
+&lt;img style="float: right;margin:10px;width:200px" src="./img/good.png"&gt;
+
+* A good volume of data : 240817 marchés sur 2 ans
+
+* A machine-readable and standardised format
+
+* Consolidated data on data.gouv.fr
+
+* Data available as OCDS for analysis and visualisation across a multitude of international tools
+
+
+---
+### The Bad
+&lt;img style="float: right;margin:10px;width:200px" src="./img/bad.png"&gt;
+
+* Some platforms are still missing
+
+* Some buyers are still missing 
+
+* Many quality issues are ongoing
+
+* A complex procedure to publish 
+
+* JSON and XML make data use complicated 
+
+* Therefore, we lack users and quality issues are not always fixed. 
+
+* Other sources (BOAMP) are still used to complement the data. 
+
+---
+### The Ugly 
+&lt;img style="float: right;margin:10px;width:200px" src="./img/ugly.png"&gt;
+
+
+* The documents are not available: it is difficult to know what has been purchased. The documents of a contract (specifications, offers, text of the contract itself...) are not subject to the publication obligation: how to know precisely what has been purchased?
+
+* Companies do not play the game and try to sell public data
+
+* No unique identifier to track the life of a contract. No phase by phase tracking. 
+
+* Threshold at 40k€
+
+* Health emergency : transparency can be  bypassed
+
+---
+# Merci !
+
+Contact : [samuel@datactivist.coop](mailto:samuel@datactivist.coop)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>`\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
